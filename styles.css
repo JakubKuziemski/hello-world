@@ -1,0 +1,54 @@
+body {
+    background-color: orange
+}
+
+h1 {
+	font-family: courier;
+    font-size:130px;
+	background-color: rgb(255,60,75);
+	text-align:center;
+	border: 10px solid black;
+	padding: 50px;
+	margin: 45px;
+}
+#p01 {
+    color: blue;
+	font-size: 30px;
+}
+p.error 
+{
+    color: red;
+	font-size: 30px;
+}
+p.bordered
+{
+	color:black;
+	border: 10px solid red;
+}
+
+	a:link {
+		color: green;
+		font-size : 40px;
+		background-color: transparent;
+		text-decoration: none;
+	}
+	a:visited {
+		color: pink;
+		font-size : 40px;
+		background-color: transparent;
+		text-decoration: none;
+	}
+	a:hover {
+		color: red;
+		font-size : 40px;
+		background-color: transparent;
+		text-decoration: underline;
+	}
+	a:active {
+		color: yellow;
+		font-size : 40px;
+		background-color: transparent;
+		text-decoration: underline;
+	}
+
+
