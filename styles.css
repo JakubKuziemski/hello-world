@@ -1,5 +1,5 @@
 body {
-    background-color: orange
+    background-color: ADADDC;
 }
 
 h1 {
@@ -11,44 +11,107 @@ h1 {
 	padding: 50px;
 	margin: 45px;
 }
-#p01 {
-    color: blue;
-	font-size: 30px;
-}
 p.error 
 {
     color: red;
-	font-size: 30px;
+	font-size: 20px;
 }
 p.bordered
 {
-	color:black;
-	border: 10px solid red;
+	font-size: 20px;
+	color:green;
+	border: none;
 }
 
-	a:link {
-		color: green;
-		font-size : 40px;
-		background-color: transparent;
-		text-decoration: none;
-	}
-	a:visited {
-		color: pink;
-		font-size : 40px;
-		background-color: transparent;
-		text-decoration: none;
-	}
-	a:hover {
-		color: red;
-		font-size : 40px;
-		background-color: transparent;
-		text-decoration: underline;
-	}
-	a:active {
-		color: yellow;
-		font-size : 40px;
-		background-color: transparent;
-		text-decoration: underline;
-	}
+a:link {
+	color: green;
+	font-size : 40px;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:visited {
+	color: pink;
+	font-size : 40px;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+	font-size : 40px;
+	background-color: transparent;
+	text-decoration: underline;
+}
+a:active {
+	color: yellow;
+	font-size : 40px;
+	background-color: transparent;
+	text-decoration: underline;
+}
+table, th, td {
+    border: 1px solid black;
+	border-spacing:1px;
+}
+th, td{
+	padding:10px;
+	text-align:center;
+}
+table#t01{
+	background-color: #f1f1c1;
+	 border: 10px solid black;
+	 border-collapse: collapse;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+table#t01 th {
+    color: white;
+    background-color: black;
+}
+table.kuba{
+	color: white;
+	background-color:#33CCFF;
+}
+ul#menu {
+    padding: 0;
+}
 
+ul#menu li {
+    display: inline;
+}
 
+ul#menu li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px 10px 10px 10px;
+}
+
+ul#menu li a:hover {
+    background-color: #EB7566;
+	color:#20256F;
+	  text-decoration: underline;
+}
+div.example{
+	background-color:#75C29F;
+	color:black;
+	padding:10px;
+	margin:20px;
+}
+div.example2{
+	background-color:#E8EBAD;
+	color:black;
+	padding:10px;
+	margin:20px;
+	}
+.exampleSpan {
+    font-size: 120%;
+    color: red;
+}
+p#demo{
+	font-size:50px;
+	color:red;
+}

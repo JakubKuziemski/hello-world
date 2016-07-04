@@ -6,19 +6,134 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>
-HELLO WORLD
-</h1>
-<p id="p01">appeal by ID</p>
-<p class="error">Error class</p>
-<p class="bordered">This is a paragraph.</p>
-<p class="bordered">This is a paragraph.</p>
-<p class="bordered">This is a paragraph.</p>
-<p class="bordered">This is a paragraph.</p>
-<a href="http://www.allegro.pl" target="_blank"><img src="allegro.jpeg" alt="ALLEGRO" style="width:330px;height:220px;border:0"></a>
-<a href="http://www.facebook.pl" target="_blank"><img src="facebook.jpg" alt="FACEBOOK" style="width:330px;height:220px;border:0"></a>
-<a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.jpg" alt="TWITTER" style="width:330px;height:220px;border:0"></a>
-<p><a href="html_images.asp">HTML Images</a> is a link to a page on this website.</p>
-</body>
+<div class="example">
+	<ul id="menu">
+	  <li><a href="http://www.w3schools.com/html/">HTML</a></li>
+	  <li><a href="http://www.w3schools.com/css/default.asp">CSS</a></li>
+	  <li><a href="http://www.w3schools.com/js/default.asp">JavaScript</a></li>
+	  <li><a href="http://www.w3schools.com/php/default.asp">PHP</a></li>
+	</ul>
+	<h1>
+	HELLO WORLD
+	</h1>
+	<img src="http://mjswensen.com/presentations/javascript-and-jquery/images/web-trifecta_html5_css3_js-strict.png" alt="some text" style="float:right;width:816px;height:478px;">
+	<p class="error">Error class</p>
+	<p>My <span class="exampleSpan">Important</span> Heading with span</p>
+	<p class="bordered">This is a paragraph 1.</p>
+	<p class="bordered">This is a paragraph 2.</p>
+	<a href="http://www.allegro.pl" target="_blank"><img src="allegro.jpeg" alt="ALLEGRO" style="width:330px;height:220px;border:0"></a>
+	<a href="http://www.facebook.pl" target="_blank"><img src="facebook.jpg" alt="FACEBOOK" style="width:330px;height:220px;border:0"></a>
+	<a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.jpg" alt="TWITTER" style="width:330px;height:220px;border:0"></a>
+	<iframe src="http://www.w3schools.com" width="800" height="500" style="border:5px dotted blue"></iframe>
+</div>
+<p id="demo">Kliknij "Wyswietl"</p>
+	<script>
+	function Show(){
+		document.getElementById("demo").innerHTML = "HELLO JavaScript";
+	}
+	</script>
+<button type="button" onclick="Show()">Wyświetl</button>
+<button type="button" onclick="ChangeSize()">Zmien rozmiar czcionki</button>
+	<script>
+	function ChangeSize(){
+		document.getElementById("demo").style.fontSize = "60px";
+	}
+	</script>
 
+<br>
+<br>
+
+<script>
+	function changePicture(sw) {
+		var pic;
+		if (sw == 0) {
+			pic = "HelloWorld_negative.jpg"
+		} else {
+			pic = "HelloWorld_normal.jpg"
+		}
+		document.getElementById('myImage').src = pic;
+	}
+</script>
+
+<img id="myImage" src="HelloWorld_normal.jpg" width="500" height="298">
+
+<p>
+<button type="button" onclick="changePicture(1)">Normal</button>
+<button type="button" onclick="changePicture(0)">Negative</button>
+</p>
+
+<div class="example2">
+	<p><a href="html_images.asp">HTML Images</a> is a link to a page on this website.</p>
+	<table id="t01">
+	<caption>
+	Dane osobowe
+	</caption>
+	<tr>
+	<th>Imie</th><th>Nazwisko</th><th colspan="2">Pesel</th>
+	</tr>
+	<tr>
+	<td>Jakub</td><td>Kuziemski</td><td>94110703852</td><td>94110703852</td>
+	</tr>
+	<tr>
+	<td>Karol</td><td>Nowak</td><td>96250365987</td><td>94110703852</td>
+	</tr>
+	<tr>
+	<td>Monika</td><td>Kowalska</td><td>88251278956</td><td>94110703852</td>
+	</tr>
+	</table>
+	<br>
+	<table class="kuba">
+	  <tr>
+		<th>Imie:</th>
+		<td>Bill Gates</td>
+	  </tr>
+	  <tr>
+		<th rowspan="2">Telefon:</th>
+		<td>555 77 854</td>
+	  </tr>
+	  <tr>
+		<td>555 77 855</td>
+	  </tr>
+	</table>
+	<hr>
+	<p> Unordered list:</p>
+	<ul style="list-style-type:circle">
+		<li>First item</li>
+		<li>Second item</li>
+		<li>Third item</li>
+		<li>Fourth item</li>
+		<li>Fifth item</li>
+	</ul>
+	<hr>
+	<p> Ordered list:</p>
+	<ol type="A">
+		<li>First item</li>
+		<li>Second item</li>
+		<li>Third item</li>
+		<li>Fourth item</li>
+		<li>Fifth item</li>
+	</ol>
+	<hr>
+	<dl>
+		<dt>Kawa</dt>
+		<dd>Opis kawy</dd>
+		<dt>Herbata</dt>
+		<dd>Opis herbaty</dd>
+		
+	</dl>
+	<hr>
+	<ol type="I">
+		<li>Kawa</li>
+		<li>
+		Herbata
+		<ol type="a">
+			<li>Czarna</li>
+			<li>Zielona</li>
+		</ol>
+		</li>
+		<li>Mleka</li>
+	</ol>
+	<hr>
+</div>
+</body>
 </html>
